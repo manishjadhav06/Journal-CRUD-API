@@ -1,6 +1,6 @@
 # Spring Boot CRUD API
 
-This project is a simple Spring Boot API that supports CRUD (Create, Read, Update, Delete) operations through URL endpoints. It doesn't have an interface and doesn't use a database; instead, it works with a list to store JSON objects. Postman is used to interact with the API.
+This project is a simple Spring Boot API that supports CRUD (Create, Read, Update, Delete) operations through URL endpoints. It doesn't have an interface and doesn't use a database; instead, it works with a local list to store JSON objects. Postman is used to interact with the API.
 
 ## Features
 - **Create**: Add new JSON objects to the list.
@@ -11,8 +11,8 @@ This project is a simple Spring Boot API that supports CRUD (Create, Read, Updat
 ## How to Use
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-username/springboot-crud-api.git
-    cd springboot-crud-api
+    git clone https://github.com/manishjadhav06/Journal-CRUD-API.git
+    cd Journal-CRUD-API
     ```
 
 2. **Build and Run the Application**:
@@ -21,11 +21,17 @@ This project is a simple Spring Boot API that supports CRUD (Create, Read, Updat
     ```
 
 3. **Use Postman to Interact with the API**:
-    - **POST** `/api/objects`: Add a new JSON object.
-    - **GET** `/api/objects`: Retrieve all JSON objects.
-    - **GET** `/api/objects/{id}`: Retrieve a JSON object by its ID.
-    - **PUT** `/api/objects/{id}`: Update a JSON object by its ID.
-    - **DELETE** `/api/objects/{id}`: Delete a JSON object by its ID.
+   **It contains 3 fields i.e. id, title, and content and the data to be pushed is needed to be in JSON format.**
+    For eg. {
+               id:1,
+               title: "New title",
+               content: "New content"
+            }
+    - **POST** `localhost:8080/journal`: Add a new JSON object.
+    - **GET** `localhost:8080/journal`: Retrieve all JSON objects.
+    - **GET** `localhost:8080/journal/id/{id}`: Retrieve a JSON object by its ID.
+    - **PUT** `localhost:8080/journal/id/{id}`: Update a JSON object by its ID.
+    - **DELETE** `localhost:8080/journal/id/{id}`: Delete a JSON object by its ID.
 
 ## How It's Built
 - **Framework**: Spring Boot
