@@ -48,9 +48,6 @@ The project demonstrates the following concepts:
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 - Spring Boot documentation: [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/current/reference/html/)
 - Postman documentation: [Postman Learning Center](https://learning.postman.com/)
