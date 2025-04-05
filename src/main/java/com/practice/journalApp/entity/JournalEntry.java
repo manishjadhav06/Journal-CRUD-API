@@ -4,6 +4,7 @@ public class JournalEntry {
 	private long id;
 	private String title;
 	private String content;
+	
 	public long getId() {
 		return id;
 	}
@@ -22,10 +23,10 @@ public class JournalEntry {
 	public void setContent(String content) {
 		this.content = content;
 	}
+
 	@Override
 	public String toString() {
 		return "JournalEntry [Id=" + id + ", Title=" + title + ", Content=" + content + "]";
 	}
-	
-	
+
 }
