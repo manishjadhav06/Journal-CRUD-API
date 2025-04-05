@@ -33,12 +33,12 @@ public class JournalEntryCtrl {
 		return true;
 	}
 	
-	@GetMapping("id/{myId}")
+	@GetMapping("/id/{myId}")
 	public JournalEntry searchById(@PathVariable Long myId) {
 		return journalEntries.get(myId);
 	}
 	
-	@DeleteMapping("id/{myId}")
+	@DeleteMapping("/id/{myId}")
 	public boolean deleteById(@PathVariable Long myId) {
 		journalEntries.remove(myId);
 		return true;
