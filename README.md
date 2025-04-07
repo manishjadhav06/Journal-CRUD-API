@@ -1,6 +1,6 @@
 # Spring Boot CRUD API
 
-This project is a simple Spring Boot API that supports CRUD (Create, Read, Update, Delete) operations through URL endpoints. It doesn't have an interface and doesn't use a database; instead, it works with a local list to store JSON objects. Postman is used to interact with the API.
+This project is a simple Spring Boot API that supports CRUD (Create, Read, Update, Delete) operations through URL endpoints. It doesn't have an interface; Postman is used to interact with the API. The JSON data is stored in a table automatically created in the H2 in-memory database.
 
 ## Features
 - **Create**: Add new JSON objects to the list.
@@ -21,7 +21,7 @@ This project is a simple Spring Boot API that supports CRUD (Create, Read, Updat
     ```
 
 3. **Use Postman to Interact with the API**:
-   **It contains 3 fields i.e. id, title, and content and the data to be pushed is needed to be in JSON format.**
+   **It contains 3 fields: id, title, and content. The data to be pushed needs to be in JSON format.**
     For eg. {
                id:1,
                title: "New title",
@@ -36,7 +36,7 @@ This project is a simple Spring Boot API that supports CRUD (Create, Read, Updat
 ## How It's Built
 - **Framework**: Spring Boot
 - **Language**: Java
-- **Data Storage**: In-memory list (no database)
+- **Data Storage**: H2 in-memory database
 - **API Testing**: Postman
 
 The project demonstrates the following concepts:
